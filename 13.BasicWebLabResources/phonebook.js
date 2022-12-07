@@ -1,24 +1,18 @@
-const phonebook = [
-	{
-		name: 'Pesho',
-		number: '123123123',
-	},
-	{
-		name: 'Gosho',
-		number: '123456789'
-	},
-	{
-		name: 'Roberto',
-		number: '09300098'
-	}
-];
+const Contact = require("./models/Contact");
 
+const phonebook = [];
 
 function getContacts()
 {
 	return phonebook.slice();
 }
 
+function addContact(contact)
+{
+	phonebook.push(contact);
+}
+
 module.exports = {
 	getContacts,
+	addContact,
 }
