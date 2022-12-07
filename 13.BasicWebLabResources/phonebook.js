@@ -1,5 +1,24 @@
-/* TODO: 
-	create phonebook array
-	add methods for adding in the phonebook and getting it
-	export the methods
-*/
+const phonebook = [
+	{
+		name: 'Pesho',
+		number: '123123123',
+	},
+	{
+		name: 'Gosho',
+		number: '123456789'
+	},
+	{
+		name: 'Roberto',
+		number: '09300098'
+	}
+];
+
+
+function getContacts()
+{
+	return phonebook.slice();
+}
+
+module.exports = {
+	getContacts,
+}
